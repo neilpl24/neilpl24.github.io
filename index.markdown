@@ -1,6 +1,7 @@
 ---
 layout: home
 permalink: /stor565/
+title: Home
 ---
 
 # STOR 565 Final Project -- Team Name 
