@@ -1,6 +1,6 @@
 ---
 layout: home
-permalink: /stor565/
+permalink:
 ---
 
 # STOR 565 Final Project -- Team Name 
