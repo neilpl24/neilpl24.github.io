@@ -25,8 +25,8 @@ The whole group met over zoom on Monday Feb. 28th from 4pm-5pm to discuss which 
 
 In the same meeting we then took some time to seek out different data sources, and decided to continue searching for data after the meeting. Each member found 1-2 data sources that were in an accessible format (.csv, excel files, web-scraping friendly) and we discussed over group message which data sets we liked the most and wanted to use for our project. We settled on 2 data sources: the All Game Level Dataset from Money Puck* and the NHL Game Data csv’s on Kaggle by Martin Ellis**. We plan to focus primarily on the Money Puck data and supplement as needed with the Kaggle data, as the Money Puck data is larger and covers more data as a whole than any one of the individual csv’s in Ellis’ repository. Money Puck also covers data going back to the 2008 regular season, while Ellis only has data for the past 6 seasons. 
 
-https://moneypuck.com/data.htm 
-https://www.kaggle.com/martinellis/nhl-game-data
+[Link](https://moneypuck.com/data.htm)
+[Link](https://www.kaggle.com/martinellis/nhl-game-data) 
 
 **What were obstacles faced if any in working on the project?**
 

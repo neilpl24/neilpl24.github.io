@@ -7,7 +7,6 @@ permalink: /about/
 ## Team Members
 
 - Reed Frellick
-- Johanna Niggemann
 - Lewis Dubrowski
 - Jimmy Slaight
 - Neil Pierre-Louis
