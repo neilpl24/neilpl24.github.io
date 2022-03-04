@@ -19,7 +19,7 @@ Planner: Lewis Dubrowski
 
 We are working on NHL hockey data to study the success of teams based on season-by-season and game-by-game predictors. Our short-term goals to start this week were to find the data sets that we plan to use for the project and explore what we can best predict/focus on as “success” (wins, goals, goal differential, playoff team), and from there our goal is to use various machine learning techniques to classify and/or predict which teams are successful in the NHL. This is obviously a broad description, but we hope to narrow into more specific goals in the coming weeks.
 
-**What was done during the report period regarding the project**
+**What was done during the report period regarding the project?**
 
 The whole group met over zoom on Monday Feb. 28th from 4pm-5pm to discuss which sport we were interested in studying, and after talking about our various interests and hopes for the project we settled on hockey- a sport we were all familiar with but for the most part had not yet studied in or outside of a class. We also decided to focus on the NHL, since there would likely be better data coming from a professional league vs. amateur/college levels.
 
@@ -28,11 +28,11 @@ In the same meeting we then took some time to seek out different data sources, a
 https://moneypuck.com/data.htm 
 https://www.kaggle.com/martinellis/nhl-game-data
 
-**What were obstacles faced if any in working on the project**
+**What were obstacles faced if any in working on the project?**
 
 There were not any significant obstacles for us, as we were able to find a time to meet all together and got some really strong ideas from that meeting on our direction as a group. Data was fairly accessible on the internet, and the group was able to communicate well over group text to handle questions/organizational things after the meeting.
 
-**What is the plan for the next reporting period including what each team member is to work on. Describe goals and potential timelines (“ I plan to finish understanding x to see if it can be implemented for our project by Wednesday etc”.)**
+**What is the plan for the next reporting period including what each team member is to work on. Describe goals and potential timelines. (“ I plan to finish understanding x to see if it can be implemented for our project by Wednesday etc”)**
 
 For the next reporting period, our immediate concern is finishing the project proposal (due Thursday March 10th). We plan to work on this as an entire group cooperatively via a shared google doc. We will have a better vision for our proposal once we have done some exploratory data analysis on our data over the weekend and early next week individually, and we plan to meet on Monday March 7th to discuss our individual analyses and how we see our group moving forward with them, particularly as it applies to the exact features of the data we intend to study.
 
