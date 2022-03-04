@@ -1,0 +1,51 @@
+---
+layout: post
+title:  "Biweekly Update 1"
+date:   2022-03-03
+categories: Biweekly Updates
+---
+
+## Roles
+
+Facilitator: Jimmy Slaight
+
+Recorder: Reed Frellick (Team Contact)
+
+Deliverer: Neil Pierre-Louis (Website Manager)
+
+Planner: Lewis Dubrowski
+
+**Describe briefly what the main goal of your team is (so the peer reviewer has some context). E.g. we are working on image classification for blah de blah. Our goal is blah de blah etc. In the initial part of the semester before your proposal it is ok to put down “we are still coming up with ideas on team project”.**
+
+We are working on NHL hockey data to study the success of teams based on season-by-season and game-by-game predictors. Our short-term goals to start this week were to find the data sets that we plan to use for the project and explore what we can best predict/focus on as “success” (wins, goals, goal differential, playoff team), and from there our goal is to use various machine learning techniques to classify and/or predict which teams are successful in the NHL. This is obviously a broad description, but we hope to narrow into more specific goals in the coming weeks.
+
+**What was done during the report period regarding the project**
+
+The whole group met over zoom on Monday Feb. 28th from 4pm-5pm to discuss which sport we were interested in studying, and after talking about our various interests and hopes for the project we settled on hockey- a sport we were all familiar with but for the most part had not yet studied in or outside of a class. We also decided to focus on the NHL, since there would likely be better data coming from a professional league vs. amateur/college levels.
+
+In the same meeting we then took some time to seek out different data sources, and decided to continue searching for data after the meeting. Each member found 1-2 data sources that were in an accessible format (.csv, excel files, web-scraping friendly) and we discussed over group message which data sets we liked the most and wanted to use for our project. We settled on 2 data sources: the All Game Level Dataset from Money Puck* and the NHL Game Data csv’s on Kaggle by Martin Ellis**. We plan to focus primarily on the Money Puck data and supplement as needed with the Kaggle data, as the Money Puck data is larger and covers more data as a whole than any one of the individual csv’s in Ellis’ repository. Money Puck also covers data going back to the 2008 regular season, while Ellis only has data for the past 6 seasons. 
+
+https://moneypuck.com/data.htm 
+https://www.kaggle.com/martinellis/nhl-game-data
+
+**What were obstacles faced if any in working on the project**
+
+There were not any significant obstacles for us, as we were able to find a time to meet all together and got some really strong ideas from that meeting on our direction as a group. Data was fairly accessible on the internet, and the group was able to communicate well over group text to handle questions/organizational things after the meeting.
+
+**What is the plan for the next reporting period including what each team member is to work on. Describe goals and potential timelines (“ I plan to finish understanding x to see if it can be implemented for our project by Wednesday etc”.)**
+
+For the next reporting period, our immediate concern is finishing the project proposal (due Thursday March 10th). We plan to work on this as an entire group cooperatively via a shared google doc. We will have a better vision for our proposal once we have done some exploratory data analysis on our data over the weekend and early next week individually, and we plan to meet on Monday March 7th to discuss our individual analyses and how we see our group moving forward with them, particularly as it applies to the exact features of the data we intend to study.
+
+We will then combine what we have for exploratory analysis and likely further explore from that in the project proposal. Individual assignments for parts of the project proposal will be assigned in our March 7th meeting.
+
+**Role Descriptions**
+
+Facilitator: Manages the group for this week including setting up times for group members to meet, making sure everyone has a say in the meetings etc.
+
+Recorder: Person in charge of recording the meetings as well as the happenings of the past two weeks and describing what was accomplished in the meeting and writing up this report.
+
+Deliverer: Person in charge of checking the entire report and uploading the file to dropbox folder and project website, as well as the representative of the group getting in touch with the instructor.
+
+Planner: Person in charge of what will be happening next two weeks as well as thinking about longer term goals (what more needs to be done for the project).
+
+Team contact: Person I can email if I see any issues in the biweekly report instead of mass spamming everyone in the team.
