@@ -1,0 +1,45 @@
+---
+layout: post
+title:  "Biweekly Update 2"
+date:   2022-03-25
+categories: Biweekly Updates
+---
+
+## Roles
+
+Facilitator: Lewis Dubrowski
+
+Recorder: Jimmy Slaight 
+
+Deliverer: Reed Frellick (Team Contact)
+
+Planner: Neil Pierre-Louis (Website Manager)
+
+**Describe briefly what the main goal of your team is (so the peer reviewer has some context). E.g. we are working on image classification for blah de blah. Our goal is blah de blah etc. In the initial part of the semester before your proposal it is ok to put down “we are still coming up with ideas on team project”.**
+
+We have narrowed down our main goals to predicting goals for and against a team in an NHL game given rate statistics from prior games in the season, using those predictions to predict the outcomes of individual games, and predicting anywhere from multiple games to entire seasons of a team’s success based on those prediction sets. We aim to account for as much variation in these predictions as possible with the most important variables in the dataset, which we will determine through further data exploration and ML techniques learned in class. 
+
+**What was done during the report period regarding the project?**
+
+The whole group met over zoom on Monday, March 7th from 4pm-5pm to talk about what we each discovered through EDA of the dataset. We recognized that we would have to clean up our dataset in a couple of areas and we decided to focus on the rate statistics included in the dataset as opposed to the predictive statistics determined by Money Puck. Finally, we each had various approaches to the EDA, and that helped in identifying potential ML techniques that we wanted to implement in our project moving forward. 
+Following that meeting, we focused on completing our project proposal by finalizing our new project goals and by combining all of the relevant EDA of said goals. Since submitting our project proposal, we have each been conducting data analysis given our new motivations and the ML techniques we wanted to incorporate in our project.
+
+**What were obstacles faced if any in working on the project?**
+
+This could be technical (like not being able to implement or understand particular techniques) or time issues (midterms for other courses etc). 
+
+**What is the plan for the next reporting period including what each team member is to work on. Describe goals and potential timelines. (“ I plan to finish understanding x to see if it can be implemented for our project by Wednesday etc”)**
+
+For the next reporting period, we will meet and discuss what we have each discovered through further, narrowed data exploration and analysis. By then, we will have made progress on our goals by implementing previously learned ML techniques, such as PCA and Lasso, as well as newer techniques, like LDA and QDA, that our class has used to complete HW7.
+
+**Role Descriptions**
+
+Facilitator: Manages the group for this week including setting up times for group members to meet, making sure everyone has a say in the meetings etc.
+
+Recorder: Person in charge of recording the meetings as well as the happenings of the past two weeks and describing what was accomplished in the meeting and writing up this report.
+
+Deliverer: Person in charge of checking the entire report and uploading the file to dropbox folder and project website, as well as the representative of the group getting in touch with the instructor.
+
+Planner: Person in charge of what will be happening next two weeks as well as thinking about longer term goals (what more needs to be done for the project).
+
+Team contact: Person I can email if I see any issues in the biweekly report instead of mass spamming everyone in the team.
