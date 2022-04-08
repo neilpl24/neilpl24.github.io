@@ -1,0 +1,59 @@
+---
+layout: post
+title:  "Biweekly Update 3"
+date:   2022-04-07
+categories: Biweekly Updates
+---
+
+## Roles
+
+Facilitator: Lewis Dubrowski
+
+Recorder: Neil Pierre-Louis (Website Manager)
+
+Deliverer: Jimmy Slaight
+
+Planner: Reed Frellick (Team Contact)
+
+**Describe briefly what the main goal of your team is (so the peer reviewer has some context). E.g. we are working on image classification for blah de blah. Our goal is blah de blah etc. In the initial part of the semester before your proposal it is ok to put down “we are still coming up with ideas on team project”.**
+
+We are working on a classifier that can take in statistics from an NHL game, exclude the most important variables (isWin, goals scored, goals against, and predict if a team wins the game or not and throw out the corresponding probabilities for that team winning based on their performance. We are also using this data to predict season long records.
+
+**What was done during the report period regarding the project?**
+
+The whole group met over zoom on Tuesday, April 5th from 4:15-5:00 pm to discuss next steps regarding the project. 
+We came up with the plan to clean the dataset to get it ready for us to run our classification algorithms on it.
+
+    •	Filter the dataset to only include home teams to remove duplicate games
+    •	Filter by the games by ‘all situations’.
+    •	Eliminate unnecessary variables (game time, game id, etc.)
+    •	Remove corrupt/missing data games and make sure team names throughout the years match up.
+
+We then decided to perform our classifications similar to HW 7 and split up several classifiers amongst the team. We are going to run these and compare our model accuracies using several techniques (ROC score, error rate, AUC, etc).
+
+
+**What were obstacles faced if any in working on the project?**
+
+There have not been any significant obstacles faced while working on the project. The only issue was just meeting with midterms and the national championship.
+
+**What is the plan for the next reporting period including what each team member is to work on. Describe goals and potential timelines. (“ I plan to finish understanding x to see if it can be implemented for our project by Wednesday etc”)**
+
+We plan to finish our classification models as soon as Neil is done cleaning the data. We will then meet to compare and discuss our findings.
+
+    •	Jimmy will be doing LDA and QDA
+    •	Lewis will be doing random forests and decision trees.
+    •	Reed will be doing logistic regression.
+    •	Neil will be doing KNN.
+
+
+**Role Descriptions**
+
+Facilitator: Manages the group for this week including setting up times for group members to meet, making sure everyone has a say in the meetings etc.
+
+Recorder: Person in charge of recording the meetings as well as the happenings of the past two weeks and describing what was accomplished in the meeting and writing up this report.
+
+Deliverer: Person in charge of checking the entire report and uploading the file to dropbox folder and project website, as well as the representative of the group getting in touch with the instructor.
+
+Planner: Person in charge of what will be happening next two weeks as well as thinking about longer term goals (what more needs to be done for the project).
+
+Team contact: Person I can email if I see any issues in the biweekly report instead of mass spamming everyone in the team.
