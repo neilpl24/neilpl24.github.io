@@ -1,1 +1,603 @@
-<html><head><meta content="text/html; charset=UTF-8" http-equiv="content-type"><style type="text/css">ol{margin:0;padding:0}table td,table th{padding:0}.c15{background-color:#ffffff;padding-top:15pt;padding-bottom:8pt;line-height:1.5;orphans:2;widows:2;text-align:center}.c4{color:#000000;font-weight:700;text-decoration:none;vertical-align:baseline;font-size:12pt;font-family:"Times New Roman";font-style:normal}.c0{color:#000000;font-weight:700;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:"Times New Roman";font-style:normal}.c25{padding-top:0pt;padding-bottom:3pt;line-height:1.5;page-break-after:avoid;orphans:2;widows:2;text-align:center}.c16{background-color:#ffffff;padding-top:15pt;padding-bottom:8pt;line-height:1.5;orphans:2;widows:2;text-align:left}.c2{color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:12pt;font-family:"Times New Roman";font-style:normal}.c12{color:#000000;font-weight:700;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:"Times New Roman";font-style:normal}.c5{padding-top:0pt;text-indent:36pt;padding-bottom:0pt;line-height:1.5;orphans:2;widows:2;text-align:left}.c24{padding-top:0pt;padding-bottom:12pt;line-height:1.5;orphans:2;widows:2;text-align:left}.c19{padding-top:0pt;padding-bottom:10pt;line-height:1.15;orphans:2;widows:2;text-align:left}.c22{padding-top:12pt;padding-bottom:12pt;line-height:1.5;orphans:2;widows:2;text-align:center}.c9{padding-top:0pt;padding-bottom:10pt;line-height:1.5;orphans:2;widows:2;text-align:left}.c8{padding-top:0pt;padding-bottom:0pt;line-height:1.15;orphans:2;widows:2;text-align:center}.c7{padding-top:0pt;padding-bottom:0pt;line-height:1.5;orphans:2;widows:2;text-align:left}.c26{padding-top:0pt;padding-bottom:0pt;line-height:1.15;orphans:2;widows:2;text-align:left}.c17{padding-top:0pt;padding-bottom:10pt;line-height:1.5;orphans:2;widows:2;text-align:center}.c11{padding-top:0pt;padding-bottom:4pt;line-height:1.5;orphans:2;widows:2;text-align:left}.c6{padding-top:12pt;padding-bottom:12pt;line-height:1.5;orphans:2;widows:2;text-align:left}.c1{background-color:#ffffff;font-size:12pt;font-family:"Times New Roman";color:#333333;font-weight:400}.c23{color:#000000;font-weight:400;font-size:26pt;font-family:"Times New Roman"}.c3{font-size:12pt;font-family:"Times New Roman";font-weight:400}.c10{font-size:12pt;font-family:"Times New Roman";font-weight:700}.c13{text-decoration:none;vertical-align:baseline;font-style:normal}.c21{background-color:#ffffff;max-width:468pt;padding:72pt 72pt 72pt 72pt}.c14{font-style:italic}.c18{height:11pt}.c20{text-indent:36pt}.title{padding-top:0pt;color:#000000;font-size:26pt;padding-bottom:3pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}.subtitle{padding-top:0pt;color:#666666;font-size:15pt;padding-bottom:16pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}li{color:#000000;font-size:11pt;font-family:"Arial"}p{margin:0;color:#000000;font-size:11pt;font-family:"Arial"}h1{padding-top:20pt;color:#000000;font-size:20pt;padding-bottom:6pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}h2{padding-top:18pt;color:#000000;font-size:16pt;padding-bottom:6pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}h3{padding-top:16pt;color:#434343;font-size:14pt;padding-bottom:4pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}h4{padding-top:14pt;color:#666666;font-size:12pt;padding-bottom:4pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}h5{padding-top:12pt;color:#666666;font-size:11pt;padding-bottom:4pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}h6{padding-top:12pt;color:#666666;font-size:11pt;padding-bottom:4pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;font-style:italic;orphans:2;widows:2;text-align:left}</style></head><body class="c21"><p class="c25 title" id="h.ji15u8xg4e05"><span class="c13 c23">Sauce Validation Final Paper</span></p><p class="c8"><span class="c12">Introduction</span></p><p class="c19"><span class="c4">Background</span></p><p class="c7"><span class="c2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hockey is a sport played on ice where there are five skaters and a goalie on each team, with the objective being to score more goals than the other team. The National Hockey League (NHL) consists of 32 teams and is regarded as the top hockey league in the world. The skill level and speed of the NHL has led to certain in-game events (shots, passes, hits, etc) happening within milliseconds of each other, making it difficult to analyze what leads to team success. This led us to question which on-ice events are important to an NHL team winning a game and if we could use these variables to predict which team won. </span></p><p class="c7 c18"><span class="c4"></span></p><p class="c9"><span class="c4">Data Collection</span></p><p class="c7"><span class="c10">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="c2">We used Peter Tanner&rsquo;s Moneypuck, a hockey analytics website, to gather NHL data for the project. The &ldquo;all teams&rdquo; dataset contains over 100 variables for every single NHL game ranging from 2008 until present day. All of the non adjusted or expected statistics are scraped directly from the NHL&rsquo;s official league API.</span></p><p class="c18 c26"><span class="c2"></span></p><p class="c9"><span class="c4">Data Explanation &amp; Cleaning</span></p><p class="c7"><span class="c10">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="c2">Before we started building our models, we decided that box score or &ldquo;hard&rdquo; statistics should be the only variables we used in our models to predict the home team winning a hockey game. We wanted to implement statistics that anyone watching a hockey game could observe and understand. Examples of box score statistics include the number of shots on goal for a team or the number of faceoff wins by the opposing team. Moneypuck had many variables in their dataset that they created based on their formulas using the box score statistics. Our group recognized that variables that contained the word &ldquo;adjusted&rdquo;, &ldquo;expected&rdquo;, &ldquo;danger&rdquo;, or &ldquo;credit&rdquo; were Moneypuck variables, and therefore we removed them from our model building process. Furthermore, we did not want to use any &ldquo;goalsFor&rdquo; or &ldquo;goalsAgainst&rdquo; variables because that relationship determines the outcome of hockey games. </span></p><p class="c7"><span class="c2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;After removing all of the mentioned variables, we went from over 100 variables in our dataset to 38 variables. We used all of the remaining variables as predictors in an initial LDA model and discovered there were some collinearity concerns in our dataset. As a result, we ran a multicollinearity diagnostic test on the remaining variables through the &ldquo;imcdiag&rdquo; function in the &ldquo;mctest&rdquo; package. The test identified 17 variables as problematic that we then removed before building our models. We ultimately had 21 predictors of Home and Away team statistics with over 14,000 observations to predict whether the home team won a hockey game. </span></p><p class="c7 c18"><span class="c2"></span></p><p class="c17"><span class="c12">Model Building and Analysis</span></p><p class="c9"><span class="c4">LDA and QDA</span></p><p class="c5"><span class="c2">We built and evaluated the LDA and QDA models using code from HW7. The models were very similar, with an 80/20 training/test split. The only difference between the models was that we scaled the LDA data and did not scale the QDA data, as LDA involves each predictor assuming the same variance. We then created a confusion matrix to evaluate the accuracy, sensitivity, specificity, and area under the curve of each model. From the confusion matrix, we found that our QDA model performed better overall, with an accuracy of .82, a sensitivity of .85, a specificity of .79, and an AUC of .90. Our LDA model resulted in rates of .69 for accuracy, .86 for sensitivity, .48 for specificity, and .76 for AUC.</span></p><p class="c7 c18"><span class="c4"></span></p><p class="c9"><span class="c4">Logistic Regression with Cross Validated Model Selection</span></p><p class="c5"><span class="c1 c13">With collinear variables already controlled for in our data, the first step for our logistic regression was to decide an approach to finding the best logistic model we could create. The group chose to do a bottom-up model selection process for this. This form of model selection was chosen as a balance between randomly creating various models and comparing their strengths and weaknesses (easiest and least formal approach) and creating a complete set of all possible models to compare (most computationally taxing). While it is possible bottom-up selection may not give us the best possible model in its subset of &ldquo;best&rdquo; models, it does give us the ability to see where and when models jump in performance and what variables interact to best predict wins.</span></p><p class="c5"><span class="c1 c13">The model selection was done using a function custom-built for our dataset and purpose, and within it all results were cross validated using a random 80-20 split of train and test data. Starting with single predictor models, each iteration of the process tested all models with all previously selected predictors and one additional predictor added, and the best model according to cross validated accuracy was kept for each iteration. After model selection, we were left with 21 models with a range of 1-21 predictors in each; we can thus refer to our logistic models based on the number of predictors.</span></p><p class="c5"><span class="c1 c13">To assess these models, we used some of the standard measures of success for cross-validated models: accuracy, sensitivity, specificity, and Area Under the Curve (AUC).</span></p><p class="c7"><span class="c1">In each of the plots below, you can see the summary statistics for the best model of each model size based on the bottom-up model selection. Notably there is a large jump in model accuracy in the 15 variable model- this is due to the inclusion of </span><span class="c1 c14">unblockedShotAttemptsAgainst</span><span class="c1">&nbsp;and </span><span class="c1 c14">savedUnblockedShotAttemptsAgainst</span><span class="c1">, which together will give the model a linear combination to find a rough estimate of </span><span class="c1 c14">goalsAgainst</span><span class="c1">, which we do not include in the set of predictors we allow because of its strong ability of predict the results of games on its own or especially when combined with </span><span class="c1 c14">goalsFor</span><span class="c1">. The most accurate single predictor model included the predictor </span><span class="c1 c14">blockedShotAttemptsFor</span><span class="c1 c13">. A full list of the models and their successively added predictors can be found below the plots. </span><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 610.53px; height: 380.12px;"><img alt="" src="images/image6.png" style="width: 610.53px; height: 380.12px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p><p class="c7"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 503.60px; height: 422.50px;"><img alt="" src="images/image4.png" style="width: 503.60px; height: 422.50px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p><p class="c9"><span class="c0">Decision Trees and Random Forest</span></p><p class="c24 c20"><span class="c3">To make our decision trees, we used the same 21 variables as in our other models, without scaling or transformations. As with the other variables, we used an 80/20 training and test set split on our data. Our resulting decision tree contained only a single variable </span><span class="c3 c14">blockedShotAttemptsFor</span><span class="c2">. Perhaps surprisingly, no other variables were deemed significant enough to be included in the decision tree, emphasizing the importance of shot attempt variables demonstrated by our other models.</span><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 368.50px; height: 229.64px;"><img alt="" src="images/image5.png" style="width: 368.50px; height: 258.13px; margin-left: 0.00px; margin-top: -28.48px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p><p class="c20 c24"><span class="c2">This model, while only containing one variable, was still able to achieve an accuracy of 0.597 and an AUC of 0.586, with a sensitivity of 0.692 and a specificity of 0.480. However, these figures remained well below those of our other models, and we believed including more variables could improve the predictions. This led us to explore a random forest model. Using out of bag error estimation, we determined the best random forest models to come with twenty variables per tree. Building 500 trees gave us a much more accurate model, as our random forest achieved an accuracy of 0.805, sensitivity of 0.840, specificity of 0.763, and an AUC of 0.801. This affirmed our belief that adding more variables would produce better predictions, as it did with many of our other models.</span></p><p class="c5"><span class="c3">Again, shot attempt variables were the most important predictors for our random forest model. In fact, four variables, </span><span class="c3 c14">savedUnblockedShotAttemptsAgainst, unblockedShotAttemptsAgainst, blockedShotAttemptsFor, </span><span class="c3">and</span><span class="c3 c14">&nbsp;playContinuedInZoneAgainst,</span><span class="c3">&nbsp;drove much of the prediction accuracy of our random forest model, as demonstrated by the variable importance plot. Three of these variables are related to shot attempts. Meanwhile, variables such as </span><span class="c3 c14">playStoppedAgainst</span><span class="c2">&nbsp;and those having to do with penalty minutes and faceoffs were deemed less important by our random forest model.</span></p><p class="c7"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 550.33px; height: 339.94px;"><img alt="" src="images/image1.png" style="width: 550.33px; height: 339.94px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p><p class="c7"><span class="c0">Gradient Boosting</span></p><p class="c7"><span class="c2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We built a gradient boosting model using the &ldquo;XGBoost&rdquo; package, an open source software that does an extremely optimized version of gradient boosting. After experimenting with several different learning rates and running 10-fold cross validation, we found that a learning rate of 0.3 led to an accuracy of around 76% and an AUC of 0.88. For reference, the Florida Panthers were the top team in the NHL this season and won roughly 70% of their games this season.</span></p><p class="c7"><span class="c3">&nbsp;</span><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 307.66px; height: 207.62px;"><img alt="" src="images/image2.png" style="width: 307.66px; height: 207.62px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 281.50px; height: 209.83px;"><img alt="" src="images/image3.png" style="width: 281.50px; height: 209.83px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p><p class="c7 c18"><span class="c2"></span></p><p class="c9"><span class="c0">Additional Models</span></p><p class="c5"><span class="c2">To try to further improve our accuracy, we built several other models. These attempts did not yield predictive accuracy that was comparable to our best models, however.</span></p><p class="c5 c18"><span class="c2"></span></p><p class="c11"><span class="c0">K Nearest Neighbors</span></p><p class="c24 c20"><span class="c2">As with our LDA model, we scaled our data before building our KNN model. We then tested various values for k, determining their accuracy using cross validation. None of the values for k produced a cross validation accuracy beyond 66%, and the best k value, 125, achieved an accuracy of 0.643 on the test set. Although the KNN model produced much worse prediction accuracy compared to many of our other models, the sensitivity, 0.813, was fairly high. It seemed KNN did a good job correctly predicting teams that won, while it struggled to predict teams that lost. This may be because there were slightly more teams that won (55%) than lost (45%) in our dataset, though this likely would not explain the entire gap between false positives and false negatives we saw in our KNN model.</span></p><p class="c11"><span class="c0">Neural Networks</span></p><p class="c6 c20"><span class="c2">We also built a dense neural network for our dataset. The NN model included one hidden layer with 15 units, a dropout rate of 0.4, and a softmax activation function. After 15 epochs, the model accuracy remained 0.713, again significantly below our best models. Although we attempted other neural network structures, including more hidden layers or a different activation function, we ultimately could not improve accuracy beyond this point. </span></p><p class="c22"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 455.50px; height: 401.75px;"><img alt="" src="images/image7.png" style="width: 455.50px; height: 401.75px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p><p class="c6"><span class="c4">Predicting Future Games</span></p><p class="c6 c20"><span class="c3">We also tested the limits of our data by trying to use a team&rsquo;s statistics over the course of a season to predict how they would play in future games. If a team has a certain number of shot attempts, hits, penalties, and faceoffs won per game, we thought we could use that information to predict whether the team would win in the future. Unfortunately, none of the models we built achieved a prediction accuracy much better than about 55%, or the baseline probability the home team will win. The models we built are much better at predicting whether a team won a game, knowing their stats from that game. This can help us understand whether a team &ldquo;deserved&rdquo; to win a game based on how they played, or whether they earned a tough luck loss. When we try to extrapolate the insights from our models to predict the future, we have much less success.</span></p><p class="c15"><span class="c12">Conclusions and Takeaways</span></p><p class="c16"><span class="c4">Basic Takeaways</span></p><p class="c16"><span class="c2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Given the size of our dataset and the fact that we only used 21 predictors to build our models, it comes as no surprise that models with more variables produced more accurate predictions. Any small amount of data we could get out of a hockey game generally improved our ability to predict who won. Thus, the best producing models included most or all of the variables, even if the weight applied to some of them was small.</span></p><p class="c16 c20"><span class="c2">As shown by our logistic and random forest models, the variables with the greatest impact on accuracy seemed to deal with how many shot attempts a team and their opponent had in the game. Since goals scored and goals allowed are the determining factors in who wins and loses a game, it is not surprising to see shot attempt variables rated as very important. The more shots a team attempts, the more likely they are to have won the game. In general, stats that were more correlated with goals contributed the most to our model accuracy. On the other hand, we were surprised to find the variables dealing with penalty minutes and faceoffs to have little importance in our models. These variables are discussed a lot on hockey broadcasts, as announcers will talk about the importance of winning faceoff battles and avoiding penalties. Instead, we found these stats correlate little with winning games.</span></p><p class="c16"><span class="c4">Potential Sources of Error</span></p><p class="c16"><span class="c10">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="c2">Hockey is a game that is constantly evolving. Games from the 2008 season have differences from games today, and those differences will find their way into the data. Before the 2018 season, the NHL shrank goalie equipment, which led to the highest goal scoring season for teams since the 2005-2006 season. Referees also began to crack down on certain penalties such as cross checks and interference, leading to more power plays, which leads to more goals. Changes like these can lead to an overweighting of shots and other offensive metrics when scoring was not as common in the previous 10 seasons that the model used. </span></p><p class="c16"><span class="c2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The sport of hockey itself is also very random and there is a lot of variability in how teams can win a game. In hockey, a team will average around 40-50 shot attempts and 5-7% of them will usually go in, whereas in basketball, teams shoot around 40-50%, so the skill level often outshines any luck in play. A team in hockey can outperform the opposing team in several metrics and dominate play, but unlucky shooting or great goaltending by the other team can lead to an &ldquo;undeserving win&rdquo; for the opposing team, or a false positive in the model. This phenomenon is seen plenty of times when looking at one sixty-minute game of hockey and not a whole season or a playoff series.</span></p><p class="c5"><span class="c2">There were also errors within our data, both raw and cleaned, that should be mentioned as potential problems for our models and overall process. The original data from Moneypuck was missing 3 years of regular season home game data for the Arizona Coyotes (2011-2013 seasons), which was the only significant issue we noticed with the set. This may be due to an issue with the Coyotes ownership during those years, as they were briefly owned and controlled by the league and may have been intentionally penalized or unintentionally mishandled in statistics tracking because of it. While it is unfortunate, we could not find a way to include this data, we do not think it significantly hinders our models in any way as we had no year-to-year interactions within our models and these games had no bearing on predicting other games other than potentially swaying the training of models slightly if they held many significant outliers, which is unlikely.</span></p><p class="c5"><span class="c2">We also must comment on the shortcomings of our process to limit certain variables making it into our models; while we were conservative in removing all Moneypuck-modeled variables and any collinearity in our predictors for all models, there was still a significant interaction between unblockedShotAttemptsAgainst and savedUnblockedShotAttemptsAgainst that slipped through and dominated the accuracy of many models. This can particularly be seen in the dramatic change in performance within our logistic models after these two variables, which individually were not very strong predictors, were combined later in the bottom-up selection. In our exploratory data analysis, we were able to see the clearly strong predicting abilities of goalsFor and goalsAgainst and purposely removed them as predictors in order to challenge ourselves to predict games based on less &ldquo;luck-based&rdquo; statistics, but despite these intentional efforts the interaction of the two shot attempt variables gave a rough estimate of goalsAgainst. In future research we think it would be prudent to explore removing one or both of these variables and the effects on model performance it would have.</span></p><p class="c5 c18"><span class="c2"></span></p><p class="c9"><span class="c4">Applications of the Models</span></p><p class="c5"><span class="c2">The applications of these models are various across the professional sports and sports media industries. First and foremost, they can give insight to NHL stakeholders (owners, coaches, executives, players, etc) into the potential result of a given game in a season, but also more importantly lend insight towards a &ldquo;formula&rdquo; for winning to apply to talent acquisition, player training, and in-game strategy. For example, it is often noted how well a team performs at faceoffs and minimizing penalties (or drawing them), but our models show that other statistics like blocked shot attempts, takeaways, and hits give a model more significant information when predicting which team wins.</span></p><p class="c5"><span class="c2">Outside of the NHL itself, our models can be used for the purpose of fan interest and entertainment by sports media companies like ESPN, or by fans themselves interested in fantasy sports or sports betting. One potential use of the models could be live betting games, which is a bet on the result of the game or score at some point during the game. Given a game is tied at the end of the second period, it may be insightful to apply the prorated game statistics to the models in order to see which team is playing more like a winning team and potentially has a predicted edge towards getting the win.</span></p><p class="c7 c18"><span class="c2"></span></p></body></html>
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <style type="text/css">
+        ol {
+            margin: 0;
+            padding: 0
+        }
+
+        table td,
+        table th {
+            padding: 0
+        }
+
+        .c15 {
+            background-color: #ffffff;
+            padding-top: 15pt;
+            padding-bottom: 8pt;
+            line-height: 1.5;
+            orphans: 2;
+            widows: 2;
+            text-align: center
+        }
+
+        .c4 {
+            color: #000000;
+            font-weight: 700;
+            text-decoration: none;
+            vertical-align: baseline;
+            font-size: 12pt;
+            font-family: "Times New Roman";
+            font-style: normal
+        }
+
+        .c0 {
+            color: #000000;
+            font-weight: 700;
+            text-decoration: none;
+            vertical-align: baseline;
+            font-size: 11pt;
+            font-family: "Times New Roman";
+            font-style: normal
+        }
+
+        .c25 {
+            padding-top: 0pt;
+            padding-bottom: 3pt;
+            line-height: 1.5;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: center
+        }
+
+        .c16 {
+            background-color: #ffffff;
+            padding-top: 15pt;
+            padding-bottom: 8pt;
+            line-height: 1.5;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        .c2 {
+            color: #000000;
+            font-weight: 400;
+            text-decoration: none;
+            vertical-align: baseline;
+            font-size: 12pt;
+            font-family: "Times New Roman";
+            font-style: normal
+        }
+
+        .c12 {
+            color: #000000;
+            font-weight: 700;
+            text-decoration: none;
+            vertical-align: baseline;
+            font-size: 14pt;
+            font-family: "Times New Roman";
+            font-style: normal
+        }
+
+        .c5 {
+            padding-top: 0pt;
+            text-indent: 36pt;
+            padding-bottom: 0pt;
+            line-height: 1.5;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        .c24 {
+            padding-top: 0pt;
+            padding-bottom: 12pt;
+            line-height: 1.5;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        .c19 {
+            padding-top: 0pt;
+            padding-bottom: 10pt;
+            line-height: 1.15;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        .c22 {
+            padding-top: 12pt;
+            padding-bottom: 12pt;
+            line-height: 1.5;
+            orphans: 2;
+            widows: 2;
+            text-align: center
+        }
+
+        .c9 {
+            padding-top: 0pt;
+            padding-bottom: 10pt;
+            line-height: 1.5;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        .c8 {
+            padding-top: 0pt;
+            padding-bottom: 0pt;
+            line-height: 1.15;
+            orphans: 2;
+            widows: 2;
+            text-align: center
+        }
+
+        .c7 {
+            padding-top: 0pt;
+            padding-bottom: 0pt;
+            line-height: 1.5;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        .c26 {
+            padding-top: 0pt;
+            padding-bottom: 0pt;
+            line-height: 1.15;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        .c17 {
+            padding-top: 0pt;
+            padding-bottom: 10pt;
+            line-height: 1.5;
+            orphans: 2;
+            widows: 2;
+            text-align: center
+        }
+
+        .c11 {
+            padding-top: 0pt;
+            padding-bottom: 4pt;
+            line-height: 1.5;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        .c6 {
+            padding-top: 12pt;
+            padding-bottom: 12pt;
+            line-height: 1.5;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        .c1 {
+            background-color: #ffffff;
+            font-size: 12pt;
+            font-family: "Times New Roman";
+            color: #333333;
+            font-weight: 400
+        }
+
+        .c23 {
+            color: #000000;
+            font-weight: 400;
+            font-size: 26pt;
+            font-family: "Times New Roman"
+        }
+
+        .c3 {
+            font-size: 12pt;
+            font-family: "Times New Roman";
+            font-weight: 400
+        }
+
+        .c10 {
+            font-size: 12pt;
+            font-family: "Times New Roman";
+            font-weight: 700
+        }
+
+        .c13 {
+            text-decoration: none;
+            vertical-align: baseline;
+            font-style: normal
+        }
+
+        .c21 {
+            background-color: #ffffff;
+            max-width: 468pt;
+            padding: 72pt 72pt 72pt 72pt
+        }
+
+        .c14 {
+            font-style: italic
+        }
+
+        .c18 {
+            height: 11pt
+        }
+
+        .c20 {
+            text-indent: 36pt
+        }
+
+        .title {
+            padding-top: 0pt;
+            color: #000000;
+            font-size: 26pt;
+            padding-bottom: 3pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        .subtitle {
+            padding-top: 0pt;
+            color: #666666;
+            font-size: 15pt;
+            padding-bottom: 16pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        li {
+            color: #000000;
+            font-size: 11pt;
+            font-family: "Arial"
+        }
+
+        p {
+            margin: 0;
+            color: #000000;
+            font-size: 11pt;
+            font-family: "Arial"
+        }
+
+        h1 {
+            padding-top: 20pt;
+            color: #000000;
+            font-size: 20pt;
+            padding-bottom: 6pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h2 {
+            padding-top: 18pt;
+            color: #000000;
+            font-size: 16pt;
+            padding-bottom: 6pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h3 {
+            padding-top: 16pt;
+            color: #434343;
+            font-size: 14pt;
+            padding-bottom: 4pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h4 {
+            padding-top: 14pt;
+            color: #666666;
+            font-size: 12pt;
+            padding-bottom: 4pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h5 {
+            padding-top: 12pt;
+            color: #666666;
+            font-size: 11pt;
+            padding-bottom: 4pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h6 {
+            padding-top: 12pt;
+            color: #666666;
+            font-size: 11pt;
+            padding-bottom: 4pt;
+            font-family: "Arial";
+            line-height: 1.15;
+            page-break-after: avoid;
+            font-style: italic;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+    </style>
+</head>
+
+<body class="c21">
+    <p class="c25 title" id="h.ji15u8xg4e05"><span class="c13 c23">Sauce Validation Final Paper</span></p>
+    <p class="c8"><span class="c12">Introduction</span></p>
+    <p class="c19"><span class="c4">Background</span></p>
+    <p class="c7"><span class="c2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hockey is a sport played on ice where
+            there are five skaters and a goalie on each team, with the objective being to score more goals than the
+            other team. The National Hockey League (NHL) consists of 32 teams and is regarded as the top hockey league
+            in the world. The skill level and speed of the NHL has led to certain in-game events (shots, passes, hits,
+            etc) happening within milliseconds of each other, making it difficult to analyze what leads to team success.
+            This led us to question which on-ice events are important to an NHL team winning a game and if we could use
+            these variables to predict which team won. </span></p>
+    <p class="c7 c18"><span class="c4"></span></p>
+    <p class="c9"><span class="c4">Data Collection</span></p>
+    <p class="c7"><span class="c10">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="c2">We used
+            Peter Tanner&rsquo;s Moneypuck, a hockey analytics website, to gather NHL data for the project. The
+            &ldquo;all teams&rdquo; dataset contains over 100 variables for every single NHL game ranging from 2008
+            until present day. All of the non adjusted or expected statistics are scraped directly from the NHL&rsquo;s
+            official league API.</span></p>
+    <p class="c18 c26"><span class="c2"></span></p>
+    <p class="c9"><span class="c4">Data Explanation &amp; Cleaning</span></p>
+    <p class="c7"><span class="c10">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="c2">Before we
+            started building our models, we decided that box score or &ldquo;hard&rdquo; statistics should be the only
+            variables we used in our models to predict the home team winning a hockey game. We wanted to implement
+            statistics that anyone watching a hockey game could observe and understand. Examples of box score statistics
+            include the number of shots on goal for a team or the number of faceoff wins by the opposing team. Moneypuck
+            had many variables in their dataset that they created based on their formulas using the box score
+            statistics. Our group recognized that variables that contained the word &ldquo;adjusted&rdquo;,
+            &ldquo;expected&rdquo;, &ldquo;danger&rdquo;, or &ldquo;credit&rdquo; were Moneypuck variables, and
+            therefore we removed them from our model building process. Furthermore, we did not want to use any
+            &ldquo;goalsFor&rdquo; or &ldquo;goalsAgainst&rdquo; variables because that relationship determines the
+            outcome of hockey games. </span></p>
+    <p class="c7"><span class="c2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;After removing all of the mentioned
+            variables, we went from over 100 variables in our dataset to 38 variables. We used all of the remaining
+            variables as predictors in an initial LDA model and discovered there were some collinearity concerns in our
+            dataset. As a result, we ran a multicollinearity diagnostic test on the remaining variables through the
+            &ldquo;imcdiag&rdquo; function in the &ldquo;mctest&rdquo; package. The test identified 17 variables as
+            problematic that we then removed before building our models. We ultimately had 21 predictors of Home and
+            Away team statistics with over 14,000 observations to predict whether the home team won a hockey game.
+        </span></p>
+    <p class="c7 c18"><span class="c2"></span></p>
+    <p class="c17"><span class="c12">Model Building and Analysis</span></p>
+    <p class="c9"><span class="c4">LDA and QDA</span></p>
+    <p class="c5"><span class="c2">We built and evaluated the LDA and QDA models using code from HW7. The models were
+            very similar, with an 80/20 training/test split. The only difference between the models was that we scaled
+            the LDA data and did not scale the QDA data, as LDA involves each predictor assuming the same variance. We
+            then created a confusion matrix to evaluate the accuracy, sensitivity, specificity, and area under the curve
+            of each model. From the confusion matrix, we found that our QDA model performed better overall, with an
+            accuracy of .82, a sensitivity of .85, a specificity of .79, and an AUC of .90. Our LDA model resulted in
+            rates of .69 for accuracy, .86 for sensitivity, .48 for specificity, and .76 for AUC.</span></p>
+    <p class="c7 c18"><span class="c4"></span></p>
+    <p class="c9"><span class="c4">Logistic Regression with Cross Validated Model Selection</span></p>
+    <p class="c5"><span class="c1 c13">With collinear variables already controlled for in our data, the first step for
+            our logistic regression was to decide an approach to finding the best logistic model we could create. The
+            group chose to do a bottom-up model selection process for this. This form of model selection was chosen as a
+            balance between randomly creating various models and comparing their strengths and weaknesses (easiest and
+            least formal approach) and creating a complete set of all possible models to compare (most computationally
+            taxing). While it is possible bottom-up selection may not give us the best possible model in its subset of
+            &ldquo;best&rdquo; models, it does give us the ability to see where and when models jump in performance and
+            what variables interact to best predict wins.</span></p>
+    <p class="c5"><span class="c1 c13">The model selection was done using a function custom-built for our dataset and
+            purpose, and within it all results were cross validated using a random 80-20 split of train and test data.
+            Starting with single predictor models, each iteration of the process tested all models with all previously
+            selected predictors and one additional predictor added, and the best model according to cross validated
+            accuracy was kept for each iteration. After model selection, we were left with 21 models with a range of
+            1-21 predictors in each; we can thus refer to our logistic models based on the number of predictors.</span>
+    </p>
+    <p class="c5"><span class="c1 c13">To assess these models, we used some of the standard measures of success for
+            cross-validated models: accuracy, sensitivity, specificity, and Area Under the Curve (AUC).</span></p>
+    <p class="c7"><span class="c1">In each of the plots below, you can see the summary statistics for the best model of
+            each model size based on the bottom-up model selection. Notably there is a large jump in model accuracy in
+            the 15 variable model- this is due to the inclusion of </span><span
+            class="c1 c14">unblockedShotAttemptsAgainst</span><span class="c1">&nbsp;and </span><span
+            class="c1 c14">savedUnblockedShotAttemptsAgainst</span><span class="c1">, which together will give the model
+            a linear combination to find a rough estimate of </span><span class="c1 c14">goalsAgainst</span><span
+            class="c1">, which we do not include in the set of predictors we allow because of its strong ability of
+            predict the results of games on its own or especially when combined with </span><span
+            class="c1 c14">goalsFor</span><span class="c1">. The most accurate single predictor model included the
+            predictor </span><span class="c1 c14">blockedShotAttemptsFor</span><span class="c1 c13">. A full list of the
+            models and their successively added predictors can be found below the plots. </span><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 610.53px; height: 380.12px;"><img
+                alt="" src="images/image6.png"
+                style="width: 610.53px; height: 380.12px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c7"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 503.60px; height: 422.50px;"><img
+                alt="" src="images/image4.png"
+                style="width: 503.60px; height: 422.50px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c9"><span class="c0">Decision Trees and Random Forest</span></p>
+    <p class="c24 c20"><span class="c3">To make our decision trees, we used the same 21 variables as in our other
+            models, without scaling or transformations. As with the other variables, we used an 80/20 training and test
+            set split on our data. Our resulting decision tree contained only a single variable </span><span
+            class="c3 c14">blockedShotAttemptsFor</span><span class="c2">. Perhaps surprisingly, no other variables were
+            deemed significant enough to be included in the decision tree, emphasizing the importance of shot attempt
+            variables demonstrated by our other models.</span><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 368.50px; height: 229.64px;"><img
+                alt="" src="images/image5.png"
+                style="width: 368.50px; height: 258.13px; margin-left: 0.00px; margin-top: -28.48px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c20 c24"><span class="c2">This model, while only containing one variable, was still able to achieve an
+            accuracy of 0.597 and an AUC of 0.586, with a sensitivity of 0.692 and a specificity of 0.480. However,
+            these figures remained well below those of our other models, and we believed including more variables could
+            improve the predictions. This led us to explore a random forest model. Using out of bag error estimation, we
+            determined the best random forest models to come with twenty variables per tree. Building 500 trees gave us
+            a much more accurate model, as our random forest achieved an accuracy of 0.805, sensitivity of 0.840,
+            specificity of 0.763, and an AUC of 0.801. This affirmed our belief that adding more variables would produce
+            better predictions, as it did with many of our other models.</span></p>
+    <p class="c5"><span class="c3">Again, shot attempt variables were the most important predictors for our random
+            forest model. In fact, four variables, </span><span class="c3 c14">savedUnblockedShotAttemptsAgainst,
+            unblockedShotAttemptsAgainst, blockedShotAttemptsFor, </span><span class="c3">and</span><span
+            class="c3 c14">&nbsp;playContinuedInZoneAgainst,</span><span class="c3">&nbsp;drove much of the prediction
+            accuracy of our random forest model, as demonstrated by the variable importance plot. Three of these
+            variables are related to shot attempts. Meanwhile, variables such as </span><span
+            class="c3 c14">playStoppedAgainst</span><span class="c2">&nbsp;and those having to do with penalty minutes
+            and faceoffs were deemed less important by our random forest model.</span></p>
+    <p class="c7"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 550.33px; height: 339.94px;"><img
+                alt="" src="images/image1.png"
+                style="width: 550.33px; height: 339.94px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c7"><span class="c0">Gradient Boosting</span></p>
+    <p class="c7"><span class="c2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We built a gradient boosting model
+            using the &ldquo;XGBoost&rdquo; package, an open source software that does an extremely optimized version of
+            gradient boosting. After experimenting with several different learning rates and running 10-fold cross
+            validation, we found that a learning rate of 0.3 led to an accuracy of around 76% and an AUC of 0.88. For
+            reference, the Florida Panthers were the top team in the NHL this season and won roughly 70% of their games
+            this season.</span></p>
+    <p class="c7"><span class="c3">&nbsp;</span><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 307.66px; height: 207.62px;"><img
+                alt="" src="images/image2.png"
+                style="width: 307.66px; height: 207.62px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 281.50px; height: 209.83px;"><img
+                alt="" src="images/image3.png"
+                style="width: 281.50px; height: 209.83px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c7 c18"><span class="c2"></span></p>
+    <p class="c9"><span class="c0">Additional Models</span></p>
+    <p class="c5"><span class="c2">To try to further improve our accuracy, we built several other models. These attempts
+            did not yield predictive accuracy that was comparable to our best models, however.</span></p>
+    <p class="c5 c18"><span class="c2"></span></p>
+    <p class="c11"><span class="c0">K Nearest Neighbors</span></p>
+    <p class="c24 c20"><span class="c2">As with our LDA model, we scaled our data before building our KNN model. We then
+            tested various values for k, determining their accuracy using cross validation. None of the values for k
+            produced a cross validation accuracy beyond 66%, and the best k value, 125, achieved an accuracy of 0.643 on
+            the test set. Although the KNN model produced much worse prediction accuracy compared to many of our other
+            models, the sensitivity, 0.813, was fairly high. It seemed KNN did a good job correctly predicting teams
+            that won, while it struggled to predict teams that lost. This may be because there were slightly more teams
+            that won (55%) than lost (45%) in our dataset, though this likely would not explain the entire gap between
+            false positives and false negatives we saw in our KNN model.</span></p>
+    <p class="c11"><span class="c0">Neural Networks</span></p>
+    <p class="c6 c20"><span class="c2">We also built a dense neural network for our dataset. The NN model included one
+            hidden layer with 15 units, a dropout rate of 0.4, and a softmax activation function. After 15 epochs, the
+            model accuracy remained 0.713, again significantly below our best models. Although we attempted other neural
+            network structures, including more hidden layers or a different activation function, we ultimately could not
+            improve accuracy beyond this point. </span></p>
+    <p class="c22"><span
+            style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 455.50px; height: 401.75px;"><img
+                alt="" src="images/image7.png"
+                style="width: 455.50px; height: 401.75px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+                title=""></span></p>
+    <p class="c6"><span class="c4">Predicting Future Games</span></p>
+    <p class="c6 c20"><span class="c3">We also tested the limits of our data by trying to use a team&rsquo;s statistics
+            over the course of a season to predict how they would play in future games. If a team has a certain number
+            of shot attempts, hits, penalties, and faceoffs won per game, we thought we could use that information to
+            predict whether the team would win in the future. Unfortunately, none of the models we built achieved a
+            prediction accuracy much better than about 55%, or the baseline probability the home team will win. The
+            models we built are much better at predicting whether a team won a game, knowing their stats from that game.
+            This can help us understand whether a team &ldquo;deserved&rdquo; to win a game based on how they played, or
+            whether they earned a tough luck loss. When we try to extrapolate the insights from our models to predict
+            the future, we have much less success.</span></p>
+    <p class="c15"><span class="c12">Conclusions and Takeaways</span></p>
+    <p class="c16"><span class="c4">Basic Takeaways</span></p>
+    <p class="c16"><span class="c2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Given the size of our dataset and
+            the fact that we only used 21 predictors to build our models, it comes as no surprise that models with more
+            variables produced more accurate predictions. Any small amount of data we could get out of a hockey game
+            generally improved our ability to predict who won. Thus, the best producing models included most or all of
+            the variables, even if the weight applied to some of them was small.</span></p>
+    <p class="c16 c20"><span class="c2">As shown by our logistic and random forest models, the variables with the
+            greatest impact on accuracy seemed to deal with how many shot attempts a team and their opponent had in the
+            game. Since goals scored and goals allowed are the determining factors in who wins and loses a game, it is
+            not surprising to see shot attempt variables rated as very important. The more shots a team attempts, the
+            more likely they are to have won the game. In general, stats that were more correlated with goals
+            contributed the most to our model accuracy. On the other hand, we were surprised to find the variables
+            dealing with penalty minutes and faceoffs to have little importance in our models. These variables are
+            discussed a lot on hockey broadcasts, as announcers will talk about the importance of winning faceoff
+            battles and avoiding penalties. Instead, we found these stats correlate little with winning games.</span>
+    </p>
+    <p class="c16"><span class="c4">Potential Sources of Error</span></p>
+    <p class="c16"><span class="c10">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="c2">Hockey is a
+            game that is constantly evolving. Games from the 2008 season have differences from games today, and those
+            differences will find their way into the data. Before the 2018 season, the NHL shrank goalie equipment,
+            which led to the highest goal scoring season for teams since the 2005-2006 season. Referees also began to
+            crack down on certain penalties such as cross checks and interference, leading to more power plays, which
+            leads to more goals. Changes like these can lead to an overweighting of shots and other offensive metrics
+            when scoring was not as common in the previous 10 seasons that the model used. </span></p>
+    <p class="c16"><span class="c2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The sport of hockey itself is also
+            very random and there is a lot of variability in how teams can win a game. In hockey, a team will average
+            around 40-50 shot attempts and 5-7% of them will usually go in, whereas in basketball, teams shoot around
+            40-50%, so the skill level often outshines any luck in play. A team in hockey can outperform the opposing
+            team in several metrics and dominate play, but unlucky shooting or great goaltending by the other team can
+            lead to an &ldquo;undeserving win&rdquo; for the opposing team, or a false positive in the model. This
+            phenomenon is seen plenty of times when looking at one sixty-minute game of hockey and not a whole season or
+            a playoff series.</span></p>
+    <p class="c5"><span class="c2">There were also errors within our data, both raw and cleaned, that should be
+            mentioned as potential problems for our models and overall process. The original data from Moneypuck was
+            missing 3 years of regular season home game data for the Arizona Coyotes (2011-2013 seasons), which was the
+            only significant issue we noticed with the set. This may be due to an issue with the Coyotes ownership
+            during those years, as they were briefly owned and controlled by the league and may have been intentionally
+            penalized or unintentionally mishandled in statistics tracking because of it. While it is unfortunate, we
+            could not find a way to include this data, we do not think it significantly hinders our models in any way as
+            we had no year-to-year interactions within our models and these games had no bearing on predicting other
+            games other than potentially swaying the training of models slightly if they held many significant outliers,
+            which is unlikely.</span></p>
+    <p class="c5"><span class="c2">We also must comment on the shortcomings of our process to limit certain variables
+            making it into our models; while we were conservative in removing all Moneypuck-modeled variables and any
+            collinearity in our predictors for all models, there was still a significant interaction between
+            unblockedShotAttemptsAgainst and savedUnblockedShotAttemptsAgainst that slipped through and dominated the
+            accuracy of many models. This can particularly be seen in the dramatic change in performance within our
+            logistic models after these two variables, which individually were not very strong predictors, were combined
+            later in the bottom-up selection. In our exploratory data analysis, we were able to see the clearly strong
+            predicting abilities of goalsFor and goalsAgainst and purposely removed them as predictors in order to
+            challenge ourselves to predict games based on less &ldquo;luck-based&rdquo; statistics, but despite these
+            intentional efforts the interaction of the two shot attempt variables gave a rough estimate of goalsAgainst.
+            In future research we think it would be prudent to explore removing one or both of these variables and the
+            effects on model performance it would have.</span></p>
+    <p class="c5 c18"><span class="c2"></span></p>
+    <p class="c9"><span class="c4">Applications of the Models</span></p>
+    <p class="c5"><span class="c2">The applications of these models are various across the professional sports and
+            sports media industries. First and foremost, they can give insight to NHL stakeholders (owners, coaches,
+            executives, players, etc) into the potential result of a given game in a season, but also more importantly
+            lend insight towards a &ldquo;formula&rdquo; for winning to apply to talent acquisition, player training,
+            and in-game strategy. For example, it is often noted how well a team performs at faceoffs and minimizing
+            penalties (or drawing them), but our models show that other statistics like blocked shot attempts,
+            takeaways, and hits give a model more significant information when predicting which team wins.</span></p>
+    <p class="c5"><span class="c2">Outside of the NHL itself, our models can be used for the purpose of fan interest and
+            entertainment by sports media companies like ESPN, or by fans themselves interested in fantasy sports or
+            sports betting. One potential use of the models could be live betting games, which is a bet on the result of
+            the game or score at some point during the game. Given a game is tied at the end of the second period, it
+            may be insightful to apply the prorated game statistics to the models in order to see which team is playing
+            more like a winning team and potentially has a predicted edge towards getting the win.</span></p>
+    <p class="c7 c18"><span class="c2"></span></p>
+</body>
+
+</html>
