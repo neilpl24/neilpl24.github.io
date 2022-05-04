@@ -1,5 +1,5 @@
 ---
-layout: Final Paper
+layout: paper
 title: Final Paper
 permalink: /paper/
 ---
